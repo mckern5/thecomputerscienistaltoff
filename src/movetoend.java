@@ -1,6 +1,4 @@
 
-
-
 //page92
 public class movetoend {
 	
@@ -10,30 +8,22 @@ public class movetoend {
 		int[] blank=new int[a_list.length];
 		int zeroindex=0;
 		
-		for(int i=0;i<a_list.length;i++ ) {
+		for(int i=0; i<a_list.length;i++) {
 			if(a_list[i] !=0) {
-				
 				blank[zeroindex]=a_list[i];
-				if(zeroindex != i) {
-					blank[i]=0;
-				
-				}
-				zeroindex+=1;
+				zeroindex++;
 			}
 			
 			
+			
 		}
-				
-		
-		
+						
 		return blank;
-		
 		
 	}
 	
-	
-	
-	public static void main (String[] args) {
+		
+public static void main (String[] args) {
 		int[] a_list= {8,0,3,0, 12};
 		for(int x: a_list) {
 			System.out.print(x);System.out.print(",");
